@@ -115,7 +115,7 @@ function advance(winner, roundIndex, matchIndex) {
 
 function displayWinner(winner) {
     const winnerMessage = document.getElementById('winnerMessage');
-    winnerMessage.innerHTML = `🏆 ${winner} 🥊<br>¡Felicidades!`;
+    winnerMessage.innerHTML = `🏆 ${winner} 🔫<br>¡Felicidades!`;
     winnerMessage.style.display = 'block';
     launchFireworks();
 }
