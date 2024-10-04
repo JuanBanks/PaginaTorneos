@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament TBANKS - Ingreso de Participantes</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <div id="participant-form">
+            <label for="participant-names">Participantes (uno por línea):</label>
+            <div class="input-group">
+                <textarea id="participant-names" placeholder="Nombre del participante" rows="5"></textarea>
+                <button type="button" onclick="addParticipants()">Añadir</button>
+            </div>
+        </div>
+        <div id="participants-list"></div>
+        <button id="create-bracket-btn" type="button" onclick="createBracket()">Crear Bracket</button>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #333;
+}
+
+.background {
+    background: url('Img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+
+#bracket-container {
+    margin-top: 20px;
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#bracket {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.9); /* Fondo con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.round h2 {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo con transparencia */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.match span {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.match button {
+    flex: 0 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.match button:hover {
+    background-color: #45a049;
+}
+
+.round.final {
+    margin: 0 30px;
+    background-color: rgba(255, 215, 0, 0.9); /* Fondo con transparencia */
+    font-weight: bold;
+}
+
+.round.final h2 {
+    background-color: #ff5722;
+}
+
+.winner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1000;
+}
+
