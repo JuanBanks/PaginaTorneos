@@ -12,7 +12,7 @@ body {
 }
 
 .background {
-    background: url('Img/fondo.png') no-repeat center center fixed;
+    background: url('../Img/fondo.png') no-repeat center center fixed;
     background-size: cover;
     position: absolute;
     top: 0;
