@@ -54,6 +54,8 @@ function createBracket() {
     localStorage.setItem('participants', JSON.stringify(shuffledParticipants));
 
     // Redirigir a la página del bracket
-    window.location.href = 'bracket.html';
+    window.location.href = '/PaginaTorneos/html/bracket.html';
+
 }
 
+ 
